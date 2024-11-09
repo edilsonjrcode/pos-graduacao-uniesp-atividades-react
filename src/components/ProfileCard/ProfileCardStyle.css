@@ -1,0 +1,19 @@
+.profile-card {
+    display: flex;
+    background-color: rgb(68, 68, 68);
+    width: 25rem;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.profile-card img {
+    width: 35%;
+    height: 9rem;
+    border-radius: 1rem;
+}
+
+.profile-card div.titles {
+    margin-left: 1rem;
+}
