@@ -1,46 +1,23 @@
 import './App.css';
-import ProfileCard from './components/ProfileCard/ProfileCard';
-import WithPermission from './components/WithPermission/WithPermission';
+import Atividade1 from './pages/Atividade1';
+import Atividade2 from './pages/Atividade2';
+import Atividade21 from './pages/Atividade2.1';
+import { Router, Route, Routes } from 'react-router-dom';
 
 function App() {
 
-  const Settings = () => <div>Página de Configurações</div>;
-  const ProtectedSettings = WithPermission(Settings);
-
   return (
-    <div className='app'>
-
-      <h1>Atividade 1.1</h1>
-      <div className='cards'>
-        <ProfileCard 
-          name="Francisco Chagas"
-          descricao="Sou engenheiro"
-          linkImg="https://i.pinimg.com/550x/11/bd/42/11bd42ba324ef5e5830c19e25df64ec8.jpg"
-        />    
-
-        <ProfileCard 
-          name="Maria Rita"
-          descricao="Sou engenheiro"
-          linkImg="https://dicionariompb.com.br/wp-content/uploads/2021/04/maria-rita.png"
-        />    
-
-        <ProfileCard 
-          name="Ariosvaldo Guimarães"
-          descricao="Sou engenheiro"
-          linkImg="https://aventurasnahistoria.com.br/media/_versions/2024/10/homer-capa_widelg.jpg"
-        /> 
-
-        <ProfileCard 
-          name="Penelope Charmosa"
-          descricao="Sou penelope"
-          linkImg="https://down-br.img.susercontent.com/file/2da426cdcda5c069391f5714014bfc7e"
-        />           
-      </div>
-
-      <h1>Atividade 1.2</h1>
-      <ProtectedSettings hasPermission={false} />
-
-    </div>
+    // <Router>
+    //   <Routes>
+    //   <Route path='/' element={<Atividade1/>}/>
+    //   <Route path='/atividade1' element={<Atividade1/>}/>
+    //   <Route path='/atividade2' element={<Atividade2/>}/>
+    //   <Route path='/atividade2_1' element={<Atividade21/>}/>
+    //   </Routes>
+    // </Router>
+    <Atividade1/>
+    // <Atividade2/>
+    // <Atividade2_1/>
   );
 }
 
